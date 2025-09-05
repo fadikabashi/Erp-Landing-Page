@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+:root {
+  --blue: #264aec;
+  --yellow: #f9dc5c;
+  --white: #fff;
+  --black: #222;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family: zain, sans-serif;
+   line-height: 1.6rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--black);
+    top: 0;
+    justify-content: center;
+}
+
+nav{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #f9dc5c;
+    
+}
+
+.logo img{
+    
+    height: 4rem;
+   
+}
+
+ul{
+    list-style: none;
+    margin-top: 15px;
+    
+    
+}
+nav ul li{
+    display: inline;
+    padding: 0 1rem;
+}
+
+nav ul li a{
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: larger;
+   
+}
+
+nav ul li a:hover{
+ background-color: var(--yellow);
+ color:var(--black);
+ padding: 10px;
+ border-radius: 3px;
+}
+.whatsapp{
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius:10px;
+}
+.whatsapp img{
+    height: 2rem;
+    padding: 0 5px;
+}
+.whatsapp a{
+    color: var(--black);
+    font-weight: 600;
+     text-decoration: none;
+     font-size: larger;
+}
+
+
+
+.a2zslider{
+    background: url(img/Banner.png) no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+ 
+}
+/*
+.a2zslider .text{
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 30px 40px; 
+    line-height: 4.5rem;
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem; 
+}
+    */
+.features{
+    width: 80%;
+    margin: auto;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 14px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.boxes .box{
+    border: none;
+    background:var(--white);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.boxes .box p{
+    padding: 0 15px;
+}
+
+.boxes .box:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.box img{
+    height:64px;
+}
+
+.why-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 0 5rem;
+    margin: 40px auto;
+}
+.left{
+   
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.left ul li:before{
+    content: '✓ ';
+    line-height: 32px;
+}
+.right{
+    
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--blue);
+    
+
+}
+
+.right img{
+    height: 64px;
+    margin-right: 64px;
+}
+
+.art-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 45px;
+}
+
+.art-container h1 {
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 25px;
+}
+
+.art-container h3 {
+    color: var(--blue);
+    margin: 15px 0;
+}
+footer .logo {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+footer a{
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: larger;
+}
+
+
+
+/*featuew page*/
+.fcontainer{
+    width:80%;
+    margin: auto;
+    background-color: beige;
+    padding: 15px;
+}
+
+.accounting img{
+    height: 45vh;
+    width: 100%;
+}
+
+.fcontainer h1{
+    margin-top: 15px;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.fcontainer h3 {
+    margin-top: 15px;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.fcontainer p {
+    margin-top: 10px;
+    color: var(--black);
+    padding: 10px;
+}
